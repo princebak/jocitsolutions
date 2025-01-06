@@ -72,12 +72,12 @@ const Header = () => {
                   className="hidden w-full dark:block"
                   style={{height:"30%", width:"30%", borderRadius:"50%"}}
                 />
-                <label style={{fontWeight:"bold"}}>Joc IT Solutions</label>
+                <label style={{fontWeight:"bold", cursor:"pointer"}}>Joc IT Solutions</label>
               </Link>
               
             </div>
 
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex w-full items-center justify-end gap-8 px-4" >
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -108,6 +108,7 @@ const Header = () => {
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
+                  
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
@@ -163,23 +164,35 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
+
+
+              <div className="flex items-center justify-end pr-16 lg:pr-0" >
+                  <Link
                   href="/signin"
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
                   Se connecter
                 </Link>
                 <Link
+                  href="/contact"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
+                >
+                  Contacter nous
+                </Link>
+
+                {/*
+                 <Link
                   href="/signup"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   S'inscrire
                 </Link>
+                */}
                 <div>
                   <ThemeToggler />
                 </div>
               </div>
+
             </div>
           </div>
         </div>

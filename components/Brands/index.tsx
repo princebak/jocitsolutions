@@ -1,12 +1,19 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
+import SectionTitle from "../Common/SectionTitle";
 
 const Brands = () => {
   return (
-    <section className="pt-16">
+    <section>
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
+      <SectionTitle
+          title="Nos partenaires"
+          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          center
+          
+        />
+        <div className="-mx-4 flex flex-wrap mb-24">
           <div className="w-full px-4">
             <div
               className="wow fadeInUp bg-gray-light dark:bg-gray-dark flex flex-wrap items-center justify-center rounded-sm px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
