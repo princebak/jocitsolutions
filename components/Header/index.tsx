@@ -77,7 +77,7 @@ const Header = () => {
               
             </div>
 
-            <div className="flex w-full items-center justify-end gap-8 px-4" >
+            <div className="flex w-full items-center justify-end gap-4 px-4" >
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -173,21 +173,13 @@ const Header = () => {
                 >
                   Se connecter
                 </Link>
-                <Link
-                  href="/contact"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Contacter nous
-                </Link>
-
-                {/*
+         
                  <Link
                   href="/signup"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   S'inscrire
                 </Link>
-                */}
                 <div>
                   <ThemeToggler />
                 </div>
