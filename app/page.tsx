@@ -26,6 +26,9 @@ export default function Home() {
       <Features />
       <Brands />
       <Testimonials />
+      <div className="container">
+        <div style={{border:"solid 1px white", width:"80%", margin:"auto"}}></div>
+      </div>
       <Members />
       {/*       <Pricing />
  */}

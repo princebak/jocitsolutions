@@ -49,7 +49,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-full max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -62,7 +62,7 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
-                  style={{height:"30%", width:"30%", borderRadius:"50%"}}
+                  style={{height:"40px", width:"40px", borderRadius:"50%", alignSelf:"center"}}
                 />
                 <Image
                   src="/images/logo/jocitsolutions.jpeg" //logo.svg
@@ -70,9 +70,9 @@ const Header = () => {
                   width={140}
                   height={30}
                   className="hidden w-full dark:block"
-                  style={{height:"30%", width:"30%", borderRadius:"50%"}}
+                  style={{height:"40px", width:"40px", borderRadius:"50%", alignSelf:"center"}}
                 />
-                <label style={{fontWeight:"bold", cursor:"pointer"}}>Joc IT Solutions</label>
+                <label style={{fontWeight:"bold", cursor:"pointer", alignSelf:"center"}}>Joc IT Solutions</label>
               </Link>
               
             </div>
@@ -170,6 +170,8 @@ const Header = () => {
                   <Link
                   href="/signin"
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                  style={{whiteSpace:"nowrap"}}
+
                 >
                   Se connecter
                 </Link>

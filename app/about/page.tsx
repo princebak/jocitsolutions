@@ -15,7 +15,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="À propos de nous"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Le GroupJoc est un groupe d'innovation informatique et entrepreneurial; toujours prêt à vous servir."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
